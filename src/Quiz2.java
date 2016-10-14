@@ -8,10 +8,11 @@
 import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.Robot;
+import becker.robots.RobotSE;
 
 /**
  *
- * @author YOUR_NAME_HERE!!!!
+ * @author schum0689
  */
 public class Quiz2 {
 
@@ -20,11 +21,22 @@ public class Quiz2 {
      */
     public static void main(String[] args) {
         // Can use Wall1.txt, Wall2.txt, or Wall3.txt
-        City kw = new City("Wall1.txt");
-        Robot karel = new Robot(kw, 1, 1, Direction.WEST);
+        City kw = new City("Wall3.txt");
+        RobotSE rick = new RobotSE (kw, 1, 1, Direction.WEST);
         
-        //program solutions coded under here
+        // program solutions coded under here
        
-    }
-    
+        // Loop actions and check if you need to move again
+        do {
+           // Turn to move
+           rick.turnLeft();
+           // Move
+           rick.move();
+           // Turn to check for a wall
+           rick.turnRight();
+        }while(!rick.frontIsClear());
+        // If there is no wall, stop
+        
+        
+    }   
 }
