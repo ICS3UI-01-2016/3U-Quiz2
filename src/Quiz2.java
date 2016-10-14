@@ -19,14 +19,14 @@ public class Quiz2 {
      */
     public static void main(String[] args) {
         // Can use Wall1.txt, Wall2.txt, or Wall3.txt
-        City kw = new City("Wall1.txt");
+        City kw = new City("Wall3.txt");
         Robot geo = new Robot(kw, 1, 1, Direction.WEST);
 
         //program solutions coded under here
-        //Main loop
+        //See wall
         while (!geo.frontIsClear()) {
+            //deal with the wall
             geo.turnLeft();
-
             geo.move();
             geo.turnLeft();
             geo.turnLeft();
