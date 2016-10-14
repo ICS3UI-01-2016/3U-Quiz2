@@ -4,14 +4,13 @@
  * and open the template in the editor.
  */
 
-
 import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.Robot;
 
 /**
  *
- * @author YOUR_NAME_HERE!!!!
+ * @author Tmister315
  */
 public class Quiz2 {
 
@@ -21,10 +20,17 @@ public class Quiz2 {
     public static void main(String[] args) {
         // Can use Wall1.txt, Wall2.txt, or Wall3.txt
         City kw = new City("Wall1.txt");
-        Robot karel = new Robot(kw, 1, 1, Direction.WEST);
-        
+        Robot geo = new Robot(kw, 1, 1, Direction.WEST);
+
         //program solutions coded under here
-       
+        //Main loop
+        while (!geo.frontIsClear()) {
+            geo.turnLeft();
+
+            geo.move();
+            geo.turnLeft();
+            geo.turnLeft();
+            geo.turnLeft();
+        }
     }
-    
 }
