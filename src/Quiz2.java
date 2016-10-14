@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author YOUR_NAME_HERE!!!!
+ * @author Andreea gavris
  */
 public class Quiz2 {
 
@@ -23,7 +23,19 @@ public class Quiz2 {
         City kw = new City("Wall1.txt");
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
-        //program solutions coded under here
+        //Chek if there is a wall infront of the robot and if so turn, mov and check
+        
+        
+        while(!karel.frontIsClear()){
+            karel.turnLeft();
+            karel.move();
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
+            
+            
+        }
+        
        
     }
     
