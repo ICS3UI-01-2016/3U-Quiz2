@@ -4,14 +4,15 @@
  * and open the template in the editor.
  */
 
-
 import becker.robots.City;
 import becker.robots.Direction;
+import becker.robots.IPredicate;
 import becker.robots.Robot;
+import becker.robots.RobotSE;
 
 /**
  *
- * @author YOUR_NAME_HERE!!!!
+ * @author Tyler.M!!!!
  */
 public class Quiz2 {
 
@@ -21,10 +22,19 @@ public class Quiz2 {
     public static void main(String[] args) {
         // Can use Wall1.txt, Wall2.txt, or Wall3.txt
         City kw = new City("Wall1.txt");
-        Robot karel = new Robot(kw, 1, 1, Direction.WEST);
-        
-        //program solutions coded under here
-       
+        RobotSE karl = new RobotSE(kw, 1, 1, Direction.WEST);
+
+        //Make karel go to end of wall
+        karl.turnLeft();
+        while (karl.isBesideThing(IPredicate.aWall)) {
+            karl.move();
+            if (!karl.isBesideThing(IPredicate.anyWall)) {
+            karl.turnRight();
+            
+                
+            
+            }
+        }
+
     }
-    
 }
