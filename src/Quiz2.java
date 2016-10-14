@@ -26,9 +26,9 @@ public class Quiz2 {
         //program solutions coded under here
         // make karel check if there is a wall if fron of him
         while (!karel.frontIsClear()) {
-            // if there is a wall, make karel turn left
+            // if there is a wall in forn of karel, make him turn left
             karel.turnLeft();
-            // make karel move once to next street
+            // make karel move once to next street 
             karel.move();
             // make him check if there is a wall to his right
             karel.turnRight();
