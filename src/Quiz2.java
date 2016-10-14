@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.Robot;
 
-/**
- *
- * @author YOUR_NAME_HERE!!!!
+/**14/10/2016
+ * Quiz 2
+ * @author micla1676
  */
 public class Quiz2 {
 
@@ -24,7 +17,31 @@ public class Quiz2 {
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
         //program solutions coded under here
-       
-    }
+       //integer to count walls
+        int wallnumber = 0;
+        
+        while(!karel.frontIsClear()){
+        //while path is not clear, turn left, move, then turn right.
+            //add 1 to wall number
+            wallnumber = wallnumber + 1;
+            //turn left
+            karel.turnLeft();
+            //move
+            karel.move();
+            //turn right
+            karel.turnLeft();
+            karel.turnLeft();
+            karel.turnLeft();
+            
+        }
+        //if path is clear, print the wallnumber, and break out of the loop.  
+
+            //print wallnumber
+            System.out.println(wallnumber);
+
+        }
+        }
     
-}
+    
+
+    
