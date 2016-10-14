@@ -28,7 +28,6 @@ public class Quiz2 {
             kris.turnLeft();
             kris.move();
             if(kris.frontIsClear()){
-            kris.move();
             kris.turnLeft();
             kris.turnLeft();
             kris.turnLeft();
