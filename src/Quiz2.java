@@ -23,7 +23,7 @@ public class Quiz2 {
         City kw = new City("Wall1.txt");
         Robot karel = new Robot(kw, 1, 1, Direction.WEST);
         
-        //Chek if there is a wall infront of the robot and if so turn, mov and check
+        //Check if there is a wall infront of the robot and if so turn, move and repeat.
         
         
         while(!karel.frontIsClear()){
