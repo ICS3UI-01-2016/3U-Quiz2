@@ -10,7 +10,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author Devon Law
+ * @author devon-law
  */
 public class Quiz2 {
 
