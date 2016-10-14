@@ -25,7 +25,7 @@ public class Quiz2 {
 
         //program solutions coded under here
 
-        //make karel check the left wall everytime
+        //make karel check the left wall everytime while he is moving
         while (!karel.frontIsClear()) {
             karel.turnLeft();
             karel.move();
