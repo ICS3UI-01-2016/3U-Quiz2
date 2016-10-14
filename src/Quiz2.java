@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author lamon
+ * @author YOUR_NAME_HERE!!!!
  */
 public class Quiz2 {
 
