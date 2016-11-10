@@ -11,7 +11,7 @@ import becker.robots.Robot;
 
 /**
  *
- * @author YOUR_NAME_HERE!!!!
+ * @author Dhana Anvic Fabelena!!!!
  */
 public class Quiz2 {
 
@@ -21,10 +21,34 @@ public class Quiz2 {
     public static void main(String[] args) {
         // Can use Wall1.txt, Wall2.txt, or Wall3.txt
         City kw = new City("Wall1.txt");
-        Robot karel = new Robot(kw, 1, 1, Direction.WEST);
+        Robot kris = new Robot(kw, 1, 1, Direction.WEST);
         
-        //program solutions coded under here
-       
+        //goal is to move kris to the end of the wall
+        while (!kris.frontIsClear()){
+            kris.turnLeft();
+            kris.move();
+            if(kris.frontIsClear()){
+            kris.turnLeft();
+            kris.turnLeft();
+            kris.turnLeft();
+            
+                        
+            }
+            
+            
+ 
+ 
+            
+        }
     }
-    
 }
+
+
+
+
+    
+    
+       
+    
+    
+
